@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>MogusMedia</title>
+</head>
+<header>
+    <h1>MOGUS<span>MEDIA</span></h1>
+    <nav>
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="Profile.html">Login</a></li>
+         </ul>
+    </nav>
+</header>
+<body>
+    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /></p>
+<button id="like-btn" onclick="Likes()">like</button> <p id="likes-paragraph">0</p> <button id="dislike-btn" onclick="dislike()">Dislike</button> <p id="dislike-paragraph">0</p>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
