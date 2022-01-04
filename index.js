@@ -2,6 +2,7 @@ let amountOfLikes = 0
 let likesParagraph = document.getElementById("likes-paragraph")
 let amountOfDislikes = 0
 let dislikeParagraph = document.getElementById("dislike-paragraph")
+let yourPostsParagraph = document.getElementById("your-posts-pararaph")
 
 console.log(likesParagraph)
 
@@ -20,4 +21,11 @@ function dislike() {
     amountOfDislikes += 1
     dislikeParagraph.innerText = amountOfDislikes
     console.log(amountOfDislikes + 'Dislikes')
+}
+
+
+function recentPosts(){
+    let input = document.getElementById("userInput")
+    input = input.value 
+    yourPostsParagraph.textContent += ", " + input
 }
