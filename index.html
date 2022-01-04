@@ -9,6 +9,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>MogusMedia</title>
+    <style>
+        .block {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background-color: #f83a00b4;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin: 4px 2px;
+    border-radius: 12%;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
 </head>
 <header>
     <h1>MOGUS<span>MEDIA</span></h1>
@@ -20,13 +39,29 @@
     </nav>
 </header>
 <body style="background-color: aquamarine;">
+    
+    
+    
+    <form>    
+        <br> <br>  
+        What would you like to post today?  
+        <input type="text" name="Course" size="100">  
+        </form>  
+    
+    
+    
+
+<button type="button" class="block" onclick="postMessage()">Post</button>
+
+    
+    
     <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
 <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
 <p><img id="output" width="200" /></p>
 <button id="like-btn" onclick="Likes()">like</button> <p id="likes-paragraph">0</p> <button id="dislike-btn" onclick="dislike()">Dislike</button> <p id="dislike-paragraph">0</p>
-
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-89ec373b-2031-4f6e-a2a3-b3e2812ec0fb"></div>
+
 
 <script src="index.js"></script>
 
