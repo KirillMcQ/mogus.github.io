@@ -22,6 +22,7 @@
     position: relative;
     margin: 4px 2px;
     border-radius: 12%;
+    padding-left: 50px;
 }
 .block:hover {
   background-color: #ddd;
@@ -42,25 +43,26 @@
     
     
     
-    <form>    
-        <br> <br>  
-        What would you like to post today?  
-        <input type="text" name="Course" size="100">  
-        </form>  
+    <input id="userInput" type="text" placeholder="Post here" style="width: 50%; height: 35px;">
+    <button onclick="returnText()" style="border-radius: 8px; padding: 10px 24px; font-size: 16px; background-color: #0328fa;">Post</button>
+
+
     
     
     
 
-<button type="button" class="block" onclick="postMessage()">Post</button>
+
 
     
     
     <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<button style="border-radius: 4px; background-color: #f44336;"><label for="file" style="cursor: pointer;">Upload Image</label></button>
 <p><img id="output" width="200" /></p>
 <button id="like-btn" onclick="Likes()">like</button> <p id="likes-paragraph">0</p> <button id="dislike-btn" onclick="dislike()">Dislike</button> <p id="dislike-paragraph">0</p>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-89ec373b-2031-4f6e-a2a3-b3e2812ec0fb"></div>
+
+<strong> <p id="your-posts-pararaph" style="text-align: center; padding-top: 40px;">Here are some of your recent posts: <br></p> </strong>
 
 
 <script src="index.js"></script>
