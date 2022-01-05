@@ -3,6 +3,8 @@ let likesParagraph = document.getElementById("likes-paragraph")
 let amountOfDislikes = 0
 let dislikeParagraph = document.getElementById("dislike-paragraph")
 let yourPostsParagraph = document.getElementById("your-posts-pararaph")
+let userIntro = document.getElementById("logged-into-hello")
+let emailBox = document.getElementById("email-box").value
 
 console.log(likesParagraph)
 
@@ -28,4 +30,8 @@ function recentPosts(){
     let input = document.getElementById("userInput")
     input = input.value 
     yourPostsParagraph.textContent += ", " + input
+}
+
+function helloUser() {
+    userIntro.textContent = userIntro + emailBox 
 }
