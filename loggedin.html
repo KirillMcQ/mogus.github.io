@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>MogusMedia</title>
+    <style>
+        .block {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background-color: #f28500;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin: 4px 2px;
+    border-radius: 12%;
+    padding-left: 50px;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topright {
+    position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+    </style>
+</head>
+<header>
+    <h1>MOGUS<span>MEDIA</span></h1>
+    <nav>
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="index.html">Logout</a></li>
+         </ul>
+    </nav>
+</header>
+<body style="background-color: aquamarine;">
+    
+    
+    
+    <input id="userInput" type="text" placeholder="Post here" style="width: 50%; height: 35px;">
+    <button onclick="recentPosts()" style="border-radius: 8px; padding: 10px 24px; font-size: 16px; background-color: #0328fa;">Post</button>
+
+
+    
+
+    
+
+
+
+    
+    
+    <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<button style="border-radius: 4px; background-color: #f44336;"><label for="file" style="cursor: pointer;">Upload Image</label></button>
+<p><img id="output" width="200" /></p>
+<button id="like-btn" onclick="Likes()">like</button> <p id="likes-paragraph">0</p> <button id="dislike-btn" onclick="dislike()">Dislike</button> <p id="dislike-paragraph">0</p>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-89ec373b-2031-4f6e-a2a3-b3e2812ec0fb"></div>
+
+<strong> <p id="your-posts-pararaph" style="text-align: center; padding-top: 40px;">Here are some of your recent posts: <br></p> </strong>
+
+
+<div class="container">
+
+    <div id="logged-into-hello"class="topright"><br><br><br>Hello, </div>
+
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
