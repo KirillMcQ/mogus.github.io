@@ -16,14 +16,15 @@
 
     <div class="form">
         <h1 class="heading">login</h1>
-        <input type="email" placeholder="email" autocomplete="off" class="email" required>
+        <input id="email-box" onblur="helloUser()"type="email" placeholder="email" autocomplete="off" class="email" required>
         <input type="password" placeholder="password" autocomplete="off" class="password" required>
-        <button class="submit-btn">log in</button>
+        <button id="login-btn" class="submit-btn" onclick="login()"><a href="loggedin.html">log in</a></button>
         <a href="register.html" class="link">Don't have an account? Make one.</a>
     </div>
     
     
     <script src="form.JS"></script>
+    <script src="index.js"></script>
 
 </body>
-</html>
+</html> 
